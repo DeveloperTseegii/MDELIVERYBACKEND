@@ -41,25 +41,25 @@ const FoodSchema = new Schema({
   },
   category: {
     name: {
-      type: String
+      type: String,
     },
     color: {
-      type: String
-    }
-  }
+      type: String,
+    },
+  },
 });
 
-const Food = mongoose.model("food", FoodSchema);
+const Food = mongoose.model("foods", FoodSchema);
 
 module.exports = Food;
 
- // category_id: {
-  //   type: String,
-  // },
+// category_id: {
+//   type: String,
+// },
 
 // yag object ID baidlaar normalized holbolt hiisen tohioldold
 
-  // category_id:[{ 
-  //   type: Schema.Types.ObjectId, 
-  //   ref: 'food_category' 
-  // }],
+// category_id:[{
+//   type: Schema.Types.ObjectId,
+//   ref: 'food_category'
+// }],
